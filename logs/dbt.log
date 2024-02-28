@@ -1,0 +1,53 @@
+[0m13:37:23.845538 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe567b64700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe569cf6c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe569cf60d0>]}
+
+
+============================== 13:37:23.852814 | edec550f-909c-47ca-91f1-b6256e319914 ==============================
+[0m13:37:23.852814 [info ] [MainThread]: Running with dbt=1.7.0
+[0m13:37:23.853833 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/Users/tennis/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m13:37:48.084619 [debug] [MainThread]: Starter project path: /Users/tennis/anaconda3/anaconda3/envs/py-etl/lib/python3.9/site-packages/dbt/include/starter_project
+[0m13:37:48.101644 [info ] [MainThread]: 
+Your new dbt project "sales_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m13:37:48.102695 [info ] [MainThread]: Setting up your profile.
+[0m13:38:58.137062 [error] [MainThread]: Encountered an error:
+
+[0m13:38:58.145857 [error] [MainThread]: Traceback (most recent call last):
+  File "/Users/tennis/anaconda3/anaconda3/envs/py-etl/lib/python3.9/site-packages/dbt/cli/requires.py", line 90, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/Users/tennis/anaconda3/anaconda3/envs/py-etl/lib/python3.9/site-packages/dbt/cli/requires.py", line 75, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/tennis/anaconda3/anaconda3/envs/py-etl/lib/python3.9/site-packages/dbt/cli/main.py", line 515, in init
+    results = task.run()
+  File "/Users/tennis/anaconda3/anaconda3/envs/py-etl/lib/python3.9/site-packages/dbt/task/init.py", line 344, in run
+    self.setup_profile(profile_name)
+  File "/Users/tennis/anaconda3/anaconda3/envs/py-etl/lib/python3.9/site-packages/dbt/task/init.py", line 264, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "/Users/tennis/anaconda3/anaconda3/envs/py-etl/lib/python3.9/site-packages/dbt/task/init.py", line 181, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "/Users/tennis/anaconda3/anaconda3/envs/py-etl/lib/python3.9/site-packages/dbt/task/init.py", line 165, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "/Users/tennis/anaconda3/anaconda3/envs/py-etl/lib/python3.9/site-packages/dbt/task/init.py", line 131, in generate_target_from_input
+    target[key] = click.prompt(
+  File "/Users/tennis/anaconda3/anaconda3/envs/py-etl/lib/python3.9/site-packages/click/termui.py", line 164, in prompt
+    value = prompt_func(prompt)
+  File "/Users/tennis/anaconda3/anaconda3/envs/py-etl/lib/python3.9/site-packages/click/termui.py", line 147, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m13:38:58.192512 [debug] [MainThread]: Resource report: {"command_name": "init", "command_wall_clock_time": 94.380165, "process_user_time": 4.160097, "process_kernel_time": 0.669842, "process_mem_max_rss": "149827584", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m13:38:58.194849 [debug] [MainThread]: Command `dbt init` failed at 13:38:58.194193 after 94.38 seconds
+[0m13:38:58.195939 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe567b64700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe56c1d1df0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe56c1d12e0>]}
+[0m13:38:58.196975 [debug] [MainThread]: Flushing usage events

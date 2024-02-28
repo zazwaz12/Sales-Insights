@@ -1,0 +1,24 @@
+models:
+  - name: employees
+    columns:
+      - name: employee_id
+        tests:
+          - unique
+          - not_null
+
+      - name: first_name
+        tests:
+          - not_null
+
+      - name: last_name
+
+      - name: title
+
+      - name: birth_date
+
+      - name: hire_date
+
+      - name: city
+
+      - name: country
+

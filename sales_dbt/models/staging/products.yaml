@@ -1,0 +1,13 @@
+models:
+  - name: products
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+
+      - name: category_id
+        tests:
+          - not_null
+
+      - name: product_name
