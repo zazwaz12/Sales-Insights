@@ -1,0 +1,14 @@
+sources:
+  - name: northwind
+    database: SALES_WAREHOUSE
+    schema: public
+    tables:
+      - name: categories
+      - name: customers
+      - name: orders
+      - name: order_details
+      - name: products
+      - name: region
+      - name: territories
+      - name: employees
+      - name: employee_territories

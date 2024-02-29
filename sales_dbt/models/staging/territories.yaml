@@ -1,0 +1,12 @@
+models:
+  - name: territories
+    columns:
+      - name: territory_id
+        tests:
+          - not_null
+
+      - name: region_id
+        tests:
+          - not_null
+
+      - name: territory_description

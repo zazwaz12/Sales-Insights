@@ -1,0 +1,10 @@
+models:
+  - name: region
+    columns:
+      - name: region_id
+        tests:
+          - unique
+          - not_null
+
+      - name: region_description
+        description: region of employee territory

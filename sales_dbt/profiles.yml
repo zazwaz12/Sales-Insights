@@ -1,0 +1,17 @@
+sales_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: bm98067.ap-southeast-2
+
+      # User/password auth
+      user: '{{ env_var("SNOWFLAKE_USERNAME") }}'
+      password: '{{ env_var("SNOWFLAKE_PASSWORD") }}'
+
+      role: accountadmin
+      database: SALES_WAREHOUSE
+      warehouse: compute_wh
+      schema: public
+      threads: 12
+      client_session_keep_alive: False

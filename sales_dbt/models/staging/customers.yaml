@@ -1,0 +1,16 @@
+models:
+  - name: customers
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+
+      - name: contact_name
+        description: customer contact name
+
+      - name: city
+        description: customer address city
+
+      - name: country
+        description: customer address country
