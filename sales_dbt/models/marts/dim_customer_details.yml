@@ -1,0 +1,20 @@
+models:
+  - name: dim_customer_details
+    columns:
+      - name: customer_key
+        description: The surrogate key of the customer_id
+        tests:
+          - not_null
+          - unique
+
+      - name: customer_name
+        description: The customer name
+
+      - name: city
+        description: The customer residing city
+
+      - name: region
+        description: The customer residing region
+
+      - name: country
+        description: The customer residing country
