@@ -4,4 +4,4 @@ select
     customers.city,
     customers.region,
     customers.country
-from {{ source('staging', 'customers') }} as customers
+from {{ ref('customers') }} as customers

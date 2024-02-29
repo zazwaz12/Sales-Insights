@@ -8,4 +8,4 @@ select
     employees.city,
     employees.region,
     employees.country,
-from {{ source('staging', 'employees') }} as employees
+from {{ ref('employees') }} as employees

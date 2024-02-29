@@ -8,6 +8,6 @@ select
     order_details.quantity,
     order_details.discount,
     unit_price * quantity * (1-discount) as total_sale_after_discount
-from {{ source('staging', 'orders') }} as orders
-left join {{ source('staging', 'order_details') }} as order_details
+from {{ ref('orders') }} as orders
+left join {{ ref('order_details') }} as order_details
     on orders.order_id = order_details.order_id
