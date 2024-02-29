@@ -1,0 +1,32 @@
+models:
+  - name: dim_employee_details
+    columns:
+      - name: employee_key
+        description: The surrogate key of the employee_id
+        tests:
+          - not_null
+          - unique
+
+      - name: first_name
+        description: The employee firstname
+
+      - name: last_name
+        description: The employee last name
+
+      - name: title
+        description: The employee title
+
+      - name: birth_date
+        description: The employee date of birth
+
+      - name: hire_date
+        description: The employee date of hire
+
+      - name: city
+        description: The employee residing city
+
+      - name: region
+        description: The employee residing region
+
+      - name: country
+        description: The employee residing country

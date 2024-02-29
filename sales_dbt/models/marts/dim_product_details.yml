@@ -1,0 +1,11 @@
+models:
+  - name: dim_product_details
+    columns:
+      - name: product_key
+        description: The surrogate key of the product_id
+        tests:
+          - not_null
+          - unique
+
+      - name: category_name
+        description: The product category name

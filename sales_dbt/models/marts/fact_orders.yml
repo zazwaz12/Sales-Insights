@@ -1,0 +1,37 @@
+models:
+  - name: fact_orders
+    columns:
+      - name: order_key
+        description: The surrogate key of the order_id
+        tests:
+          - not_null
+
+      - name: customer_key
+        description: The surrogate key of the customer_id
+        tests:
+          - not_null
+
+      - name: employee_key
+        description: The surrogate key of the employee_id
+        tests:
+          - not_null
+
+      - name: product_key
+        description: The surrogate key of the product_id
+        tests:
+          - not_null
+
+      - name: order_date
+        description: The date order was placed
+
+      - name: unit_price
+        description: Price of unit of ordered placed
+
+      - name: quantity
+        description: Quantity of units of order placed
+
+      - name: discount
+        description: Any discount applied to order
+
+      - name: total_sale_after_discount
+        description: Total sale after discount

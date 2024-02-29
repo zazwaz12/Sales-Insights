@@ -12,5 +12,6 @@ select
     birth_date,
     hire_date,
     city,
+    region,
     country
 from {{ source('northwind', 'employees') }}
