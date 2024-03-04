@@ -1,9 +1,3 @@
-{{
-    config(
-        materialized="table"
-    )
-}}
-
 select
     territory_id,
     region_id,

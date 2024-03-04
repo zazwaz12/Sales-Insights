@@ -1,9 +1,3 @@
-{{
-    config(
-        materialized="table"
-    )
-}}
-
 select
     category_id,
     category_name

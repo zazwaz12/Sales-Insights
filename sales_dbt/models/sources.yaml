@@ -1,7 +1,7 @@
 sources:
   - name: northwind
     database: SALES_WAREHOUSE
-    schema: public
+    schema: raw
     tables:
       - name: categories
       - name: customers
@@ -12,25 +12,3 @@ sources:
       - name: territories
       - name: employees
       - name: employee_territories
-
-  - name: staging
-    database: SALES_WAREHOUSE
-    schema: staging
-    tables:
-      - name: categories
-      - name: customers
-      - name: orders
-      - name: order_details
-      - name: products
-      - name: region
-      - name: territories
-      - name: employees
-      - name: employee_territories
-
-  - name: dim
-    database: SALES_WAREHOUSE
-    schema: mart
-    tables:
-      - name: dim_customer_details
-      - name: dim_employee_details
-      - name: dim_product_details
