@@ -12,9 +12,9 @@ select
     unit_price,
     quantity,
     discount,
-    _airbyte_extracted_at as extracted_date
+    _airbyte_extracted_at
 from {{ source('northwind', 'order_details') }}
 {% if is_incremental() %}
-    where _airbyte_extracted_at > (select max(extracted_date) from {{ this }} )
+    where _airbyte_extracted_at > (select max(_airbyte_extracted_at) from {{ this }} )
 {% endif %}
-order by extracted_date
+order by _airbyte_extracted_at

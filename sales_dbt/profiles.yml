@@ -12,6 +12,6 @@ sales_dbt:
       role: accountadmin
       database: SALES_WAREHOUSE
       warehouse: compute_wh
-      schema: public
+      schema: raw
       threads: 12
       client_session_keep_alive: False

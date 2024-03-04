@@ -1,9 +1,3 @@
-{{
-    config(
-        materialized="table"
-    )
-}}
-
 select
     employee_id,
     first_name,
