@@ -39,8 +39,8 @@ Dimension tables:
 - Uploade raw data set to AWS RDS Postgresql server
 - Deploy an Airbyte docker image on an EC2 instance
 - Deploy a Snowflake warehouse
-- Configure a sync task between Source (Postgresql server) and Destination (Snowflake warehouse)
-- Ingest raw data from posgtresql server into Raw schema in Snowflake warehouse using Airbyte
+- Configure a sync task between Source (RDS- Postgresql server) and Destination (Snowflake warehouse)
+- Ingest raw data from Posgtresql server into Raw schema in Snowflake warehouse using Airbyte
 - Build DBT models to transform data in 2 stages:
   - Raw -> Staging
   - Staging -> Fact and Dimension (Marts)
