@@ -2,7 +2,7 @@
 
 ## Objectives
 
-This project is dedicated to develping a ELT solution which utilises current data stack and is deployed on the cloud. The goal of this solution is provide data/business analysts with data they need to answer questions related to employees and sales performance.
+This project is dedicated to developing an ELT solution which utilises current data stack and is deployed on the cloud. The goal of this solution is provide data/business analysts with data they need to answer questions related to employees and sales performance.
 
 
 ## Consumers of your data
